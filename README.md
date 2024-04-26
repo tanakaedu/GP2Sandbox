@@ -16,7 +16,9 @@ Unityでのチーム開発やオブジェクト指向、SOLID原則を学ぶた�
 
 ![プルリクエスト先を自分のリポジトリーへ](Documents/images/img00.png)
 
-4. Unity Hubを起動して、リストに追加 をクリックして、クローンしたフォルダーを追加します
+4. Unity Hubを起動して、開く をクリックして、クローンしたフォルダーを追加します
+5. 指定のバージョンを選択して、開く
+6. エディターバージョンを変更しますか？　は、バージョンを変更をクリック
 1. GP2SandboxプロジェクトをUnityで開きます
 1. Unityが開いたら、Windowメニューから TextMeshPro > Import TMP Essential Resources を選択して Import します
 1. Projectウィンドウから GP2Sandbox > Scenes フォルダーを開いて、 System シーンをダブルクリックして開きます
