@@ -4,7 +4,7 @@ Unityでのチーム開発やオブジェクト指向、SOLID原則を学ぶた�
 
 ## 前提条件
 - GitHubのアカウントを持ち、基本的な操作ができること
-- Unity2019.4.x以降の基本操作ができること
+- Unity6以降の基本操作ができること
 - [WinMerge](https://winmergejp.bitbucket.io/)がインストールされていること
 
 ## 作業準備
