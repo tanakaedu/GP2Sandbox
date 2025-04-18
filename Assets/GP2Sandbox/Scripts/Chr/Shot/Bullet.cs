@@ -41,7 +41,7 @@ namespace AM1
         public void Spawn(AM1ObjectPool pool, Vector3 position, Vector3 velocity)
         {
             base.Spawn(pool, position);
-            rb.velocity = velocity;
+            rb.linearVelocity = velocity;
             constantSpeed = velocity.magnitude;
         }
 
@@ -52,7 +52,7 @@ namespace AM1
         {
             onDespawnEvent.Invoke();
             onDespawnEvent.RemoveAllListeners();
-            rb.velocity = Vector3.zero;
+            rb.linearVelocity = Vector3.zero;
             base.Despawn();
         }
 
@@ -61,11 +61,11 @@ namespace AM1
         /// </summary>
         private void FixedUpdate()
         {
-            float spd = rb.velocity.magnitude;
+            float spd = rb.linearVelocity.magnitude;
             if ((spd > 0)
                 && (spd < constantSpeed))
             {
-                rb.velocity = rb.velocity.normalized * constantSpeed;
+                rb.linearVelocity = rb.linearVelocity.normalized * constantSpeed;
             }
         }
     }

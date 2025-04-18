@@ -53,9 +53,9 @@ namespace AM1
         /// <param name="speed">加速したいスピード</param>
         public void AddSpeed(float speed)
         {
-            var v = rb.velocity;
+            var v = rb.linearVelocity;
             v += transform.forward * speed;
-            rb.velocity = v;
+            rb.linearVelocity = v;
         }
 
         /// <summary>
